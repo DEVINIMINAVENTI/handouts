@@ -1,0 +1,134 @@
+<?php
+
+session_start();
+
+include("../conn.php");
+include("../function.php");
+
+
+
+$user_data = check_login($con);
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholary Academy</title>
+    <link rel="stylesheet" href="../styles/videos.css">
+    <link rel="stylesheet" href="../styles/notice.css">
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+<body>
+
+    <div class="pagebreaker"></div>
+
+<div class="first">
+    <ul>
+        <div class="left">
+            <ul>
+            <li><a href="https://ugradus.com/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>Homepage</p></a></li>
+                <li><a href="https://ugradus.com"><img src="../images/mt4.png" class="listpic" alt=""> <p>Handouts</p></a></li>
+                <li><a href="https://ugradus.com/courses/phy123/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>PHY 123</p></a></li>
+                <li><a href="https://ugradus.com/courses/phy100/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>PHY 100</p></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://ugradus.com/courses/mat121/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>MAT 121</p></a></li>
+                <li><a href="https://ugradus.com/courses/mat111/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>MAT 111</p></a></li>
+                <li><a href="https://ugradus.com/courses/gst103/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>GST 103</p></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://ugradus.com/courses/gst104/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>GST 104</p></a></li>
+                <li><a href="https://ugradus.com/courses/cpt111/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>CPT 111</p></a></li>
+                <li><a href="https://ugradus.com/courses/bio111/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>BIO 111</p></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://ugradus.com/courses/bio121/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>BIO 121</p></a></li>
+                <li><a href="https://ugradus.com/courses/chm191/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>CHM 191</p></a></li>
+                <li><a href="https://ugradus.com/courses/chm111/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>CHM 111</p></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://ugradus.com/courses/mcb111/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>MCB 111</p></a></li>
+                <li><a href="https://ugradus.com/courses/gel121/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>GEL 121</p></a></li>
+                <li><a href="https://ugradus.com/courses/cpt121/index.php"><img src="../images/mt4.png" class="listpic" alt=""> <p>CPT 121</p></a></li>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </ul>
+            
+        </div>
+
+        <div class="closelist right">
+            <ul>
+                
+            </ul>
+            <div class="notice">
+                <ul>
+                   <br><br><br><br><br>
+                    <li style="display: block; width: 100%; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-display: italics; font-size: 20px; ">Your WALLET balance is "<?php echo $user_data['usedcash']; ?>" which 
+                    is ineligible to view the Handouts and Materials page, please top your wallet up! <br>
+                     To top up, simply make your payment using this link <br><a style="width: 100%; padding-left: 10px; padding-right: 10px; font-size: 15px;"  href="https://ugradus.com/notice">Click to top up your Wallet</a></li>
+                    <br><br><br><br>
+                </ul>
+            </div>
+
+            <br><br><br>
+            <footer>
+                <p>As you use our website and the services made availaible to you, You <span>agree</span> to our said <a href="">Terms and Conditions</a> 
+                    made availaible on our <a href="https://ugradus.com/privacy/">Privacy Policy</a>, Please ensure you read and be informed so as to avoid breaking our already signed agreement!</p>
+                <ul>
+                    <li><a href="https://ugradus.com/about/">About Us</a></li>
+                    <li><a href="https://ugradus.com/contact/">Contact Us</a></li>
+                    <li><a href="https://ugradus.com/privacy/">Privacy Policy</a></li>
+                </ul>
+                <br><br>
+            </footer>
+        </div>
+    </ul>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="app.js"></script>
+
+
+
+
+
+
+
+
+    <header>
+        <ul>
+            <buttona type="button" class="nav-toggler-list  p">
+                <span>  </span>
+            </buttona>
+    
+            <img src="../images/logo.png" class="logopic" alt="">
+
+         
+     
+            <buttona type="button" class="nav-toggler navbarbaa p">
+                <span>  </span>
+            </buttona>
+        </ul>
+        <nav class="navv closenav">
+            <li><a href="https://ugradus.com/index.php"><img src="../images/support.png" class="navpic" alt="">HOMEPAGE</a></li>
+            <li><a href="https://paystack.com/pay/scholaryacad" class="username"><img src="images/homeicon.png" class="navpic" alt="">User: <?php echo $user_data['username']; ?> </a></li>
+            <li><a href="https://paystack.com/pay/scholaryacad"><img src="images/about.png" class="navpic" alt="">Cash: <?php echo $user_data['usedcash']; ?> </a></li>
+            <li><a href="https://paystack.com/pay/scholaryacad"><img src="images/support.png" class="navpic" alt="">Add Cash</a></li>
+           
+
+            <li><a href="../logout.php" class="proitema">SIGN OUT</a></li>
+        </nav>
+    </header>
+
+  
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
