@@ -3,7 +3,7 @@
 }
 body{
     width: 100%;
-    background-color: black;
+    background-color: whitesmoke;
 }
 header{
     width: 100%;
@@ -12,18 +12,17 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.256);
+    background-color: white;
     display: flex;
 
 }
 .inner-ads{
-    width: 30%;
+    width: 50%;
     height: 92%;
     border-radius: 20px;
-
+    background-color: rgb(208, 208, 208);
     display: block;
     overflow: hidden;
-    
 }
 nav li a{
     
@@ -36,9 +35,8 @@ nav li a{
 .ads-pic{
     width: 100%;
     height: 90%;
-    border-top: 3px solid red;
-    overflow: hidden;
-    padding-bottom: 500px;
+    border-top: 3px solid #8d8d8d;
+    background-color:  rgb(208, 208, 208);
 }
 
 #preloader .preloadpic{
@@ -59,10 +57,9 @@ nav li a{
 .navv{
     padding: 15px;
     border-radius: 15px;
-    
 }
 .navv li a{
-    color: whitesmoke;
+    color: #4d4d4d;
 }
 .navpic{
     width: 24px;
@@ -74,8 +71,7 @@ nav{
     list-style: none;
     width: 400px;
     padding-left: 20px;
-
-    background-color: #4d4d4d;
+    background-color: none;
 }
 nav li a{
     font-size: 14px;
@@ -108,7 +104,6 @@ header ul{
     top: 80px;
     bottom: 0;
     left: 0;
-    background-color: #4d4d4d;
     right: 0;
 }
 .first ul{
@@ -126,7 +121,7 @@ header ul{
     right: 0;
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: whitesmoke;
 }
 .right ul li{
     width: 270px;
@@ -151,7 +146,7 @@ header ul{
     padding-left: 10px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    color: whitesmoke;
+    color: #2d2d2d;
     font-display: bold;
 
 }
@@ -251,7 +246,7 @@ button{
     .nav-toggler span{
         height: 2px;
         width: 20px;
-        background-color: #fff;
+        background-color: #2d2d2d;
         display: block;
         margin: auto;
         position: relative;
@@ -264,7 +259,7 @@ button{
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        background-color: #2d2d2d;
     }
     .nav-toggler span::before{
         transform: translateY(-6px);
@@ -496,7 +491,7 @@ footer p{
     width: auto;
 }
  header ul{
-    background-color: black;
+    background-color: white;
     display: flex;
  }
 .nav-toggler-list{
@@ -966,10 +961,7 @@ nav li a{
 
 
 @media screen and (max-width: 480px) {
-    .pagebreaker{
-        width: auto;
-        height: 80px;
-    }
+
     .inner-ads{
         width: 90%;
         height: 80%;
@@ -1009,10 +1001,7 @@ footer {
 
 @media screen and (max-width: 420px) {
 
-    .pagebreaker{
-        width: auto;
-        height: 80px;
-    }
+   
     .ads-closer{
         font-size: 25px;
     }
